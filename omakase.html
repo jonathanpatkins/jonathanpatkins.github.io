@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Three‑Course Omakase — Minimal Menu</title>
-  <meta name="description" content="A minimalist three-course omakase menu optimized for mobile." />
+  <title>Ratatouille (a movie I have never heard you mention)</title>
+  <meta name="description" content="Menu for a movie she has never talked about" />
   <style>
     :root {
       --bg: #0f1724;
@@ -102,56 +102,31 @@
 </head>
 <body>
   <header>
-    <h1>Three‑Course Omakase</h1>
-    <div class="subtitle">Amuse‑Bouche → Nigiri → Dessert</div>
+    <h1>Three‑Course</h1>
+    <div class="subtitle">Cheese & Strawberry → Potatoe & Leak → Confit Byaldi</div>
   </header>
 
   <main>
     <section class="course">
-      <h3>Amuse‑Bouche<span class="badge">1 bite</span></h3>
-      <p>Yuzu‑cured scallop with toasted sesame — a bright start to awaken the palate.</p>
+      <h3>Cheese & Strawberry<span class="badge">1 bite</span></h3>
+      <p>Classic charcuterie experience that blends the sweetness of berry and the sharpness of the cheese.</p>
     </section>
 
     <section class="course">
-      <h3>Nigiri Flight<span class="badge">5 pieces</span></h3>
-      <p>Shima aji, botan ebi, chu‑toro, shiromi, and anago with karashi‑su glaze — a balanced arc of flavors.</p>
+      <h3>Potatoe & Leak<span class="badge">1 cup</span></h3>
+      <p>Creamy potatoe and leak infused liquid — a balanced arc of flavors.</p>
     </section>
 
     <section class="course">
-      <h3>Dessert<span class="badge">Light</span></h3>
-      <p>Matcha panna cotta with black sesame crumble and a touch of yuzu gel — restrained, refreshing finish.</p>
+      <h3>Confit Byaldi<span class="badge">Light</span></h3>
+      <p>Summer squash, tomatoe, eggplant, and zuchini sliced thin and baked — restrained, refreshing</p>
     </section>
 
     <div class="chef">
-      <strong>Chef Haruto</strong><br>
-      Third‑generation sushi chef blending tradition with California seasonality.
-    </div>
-
-    <div class="actions">
-      <button class="btn" id="reserveBtn">Reserve (pretend)</button>
-      <button class="link" id="shareBtn">Share Menu</button>
+      <strong>Chef Atkins</strong><br>
+      Atkins was born in San José, where the hum of innovation met the warmth of tradition. A graduate of UC Berkeley, he carries the quiet rigor of academia into the sensual art of dining. His philosophy is simple yet maddeningly elusive: every plate should taste like a memory you can’t quite place.
     </div>
   </main>
-
-  <footer>
-    Made‑up omakase • Not a real restaurant<br>
-    <button class="link" id="printBtn">Print Menu</button>
-  </footer>
-
-  <script>
-    document.getElementById('reserveBtn').addEventListener('click', () => {
-      alert('Reservation submitted (pretend).');
-    });
-    document.getElementById('shareBtn').addEventListener('click', () => {
-      const title = document.title;
-      if (navigator.share) {
-        navigator.share({ title, text: 'Join me for a pretend omakase!', url: location.href });
-      } else {
-        navigator.clipboard.writeText(title + ' — pretend menu').then(() => alert('Menu copied (pretend)'));
-      }
-    });
-    document.getElementById('printBtn').addEventListener('click', () => window.print());
-  </script>
 </body>
 </html>
 
